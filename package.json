@@ -1,0 +1,31 @@
+{
+  "name": "reflex-new-carousel",
+  "version": "0.0.1",
+  "description": "Put a description here",
+  "main": "build/index.js",
+  "dependencies": {
+    "react": "^16.0.0",
+    "webpack": "^4.0.0",
+    "react-dom": "^16.5.0",
+    "classnames": "^2.2.6",
+    "css-loader": "^1.0.0",
+    "style-loader": "^0.23.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "author": {
+    "name": "Jeff Gong",
+    "email": "jeffgon@justin.tv"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1"
+  }
+}
