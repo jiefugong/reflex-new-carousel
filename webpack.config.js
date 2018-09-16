@@ -11,18 +11,24 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        include: path.resolve(__dirname, 'src'),
+        include: [
+          path.resolve(__dirname, 'src'),
+          path.resolve(__dirname, 'components'),
+        ],
         exclude: /(node_modules|bower_components|build)/,
         use: {
           loader: 'babel-loader',
           options: {
-            presets: ['env']
+            presets: ['env', 'es2015']
           }
         }
       },
       {
         test: /\.css$/,  
-        include: path.resolve(__dirname, 'src'),
+        include: [
+          path.resolve(__dirname, 'src'),
+          path.resolve(__dirname, 'components'),
+        ],
         loaders: ['style-loader', 'css-loader'],
       }
     ]
